@@ -1,0 +1,362 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.carousel-item img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #007bff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    color: #00d8ff;
+}
+
+.footer-links,
+.footer-contact {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.footer-links h5,
+.footer-contact h5 {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: white;
+    margin-right: 15px;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #00d8ff;
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #25D366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+/* Base */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #eee !important;
+}
+
+/* Navbar */
+body.dark-mode .navbar,
+.dark-mode .offcanvas,
+.dark-mode .card,
+.dark-mode footer {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar .nav-link {
+  color: #bbb !important;
+}
+
+.dark-mode .navbar .nav-link.active,
+.dark-mode .navbar .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #222 !important;
+  color: #ccc !important;
+}
+
+/* Forms */
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #2a2a2a !important;
+  color: #fff !important;
+  border: 1px solid #444 !important;
+}
+
+/* Buttons */
+.dark-mode .btn,
+.dark-mode button {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+.dark-mode .btn:hover,
+.dark-mode button:hover {
+  background-color: #555 !important;
+  color: #fff !important;
+}
+
+.dark-mode .btn-outline-secondary {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+  background-color: #fff !important;
+  color: #121212 !important;
+}
+
+/* Typography */
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode span,
+.dark-mode a,
+ 
+.dark-mode label {
+  color: #ffffff !important;
+}
+
+.dark-mode .team-card {
+  background-color: transparent !important;
+}
+
+.dark-mode .team-img {
+
+  background-color: transparent !important;
+
+}
+
+.dark-mode .social-icons {
+
+  background-color: transparent !important;
+}
+
+.dark-mode .team-card:hover .team-img {
+  background-color: transparent !important;
+}
+
+.dark-mode .team-card:hover .social-icons {
+  background-color: transparent !important;
+}
+
+.dark-mode .container1 {
+background-color: transparent !important;
+}
+.dark-mode .navbar-toggler{
+    background-color: #fff!important;
+}
+.dark-mode .bg-light{
+    
+background-color: transparent !important;
+}
+/* Tables */
+.dark-mode table {
+  background-color: #1f1f1f !important;
+  color: #fff !important;
+  border-color: #444 !important;
+}
+
+.dark-mode table th,
+.dark-mode table td {
+  border-color: #444 !important;
+}
+
+/* Alerts / Modals / Toasts */
+.dark-mode .alert,
+.dark-mode .modal-content,
+.dark-mode .toast {
+  background-color: #2c2c2c !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+/* Cards */
+.dark-mode .card {
+  background-color: #2a2a2a !important;
+  color: #fff !important;
+}
+
+.dark-mode .card-body {
+  color: #fff !important;
+}
+
+/* Dropdowns */
+.dark-mode .dropdown-menu {
+  background-color: #2a2a2a !important;
+  color: #fff !important;
+}
+
+.dark-mode .dropdown-item {
+  color: #fff !important;
+}
+
+.dark-mode .dropdown-item:hover {
+  background-color: #444 !important;
+}
+
+/* Preloader / Loader (if any) */
+.dark-mode #preloader {
+  background-color: #121212 !important;
+}
+
+/* Toggle Button */
+#darkModeToggle {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1100;
+}
+
+.maincontainer {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.team-card {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transform: translateY(40px);
+  transition: transform 0.4s ease;
+}
+
+.social-icons {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+}
+
+.team-card:hover .team-img {
+  transform: translateY(0px);
+}
+
+.team-card:hover .social-icons {
+  opacity: 1;
+  transform: translateY(0);
+}
